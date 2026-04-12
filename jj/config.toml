@@ -1,0 +1,18 @@
+"$schema" = "https://jj-vcs.github.io/jj/latest/config-schema.json"
+
+[user]
+name = "Benjamin Hartmannsgruber"
+email = "ben.hartmannsgruber@t-online.de"
+
+[ui]
+page = "less"
+paginate = "never"
+editor = "hx"
+
+[revset]
+immutable-heads = "main"
+
+[signing]
+backend = "gpg"
+allowed-signer = "6A7BAD586DE1EE06"
+behavior = "own"

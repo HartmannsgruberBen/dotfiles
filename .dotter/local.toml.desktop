@@ -1,0 +1,15 @@
+packages = [
+    "alacritty",
+    "starship",
+    "nushell",
+    "ion",
+    "helix",
+    "himalaya",
+    "jj",
+    "fuzzel",
+    "niri",
+    "waybar",
+    "zellij",
+    "yazi",
+    "wallpaper"
+]
