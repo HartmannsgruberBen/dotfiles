@@ -1,0 +1,103 @@
+# Monochrom Theme - Schwarz/Weiß/Grau
+# Systematischer Aufbau mit Erklärungen
+
+# ============================================================================
+# UI ELEMENTE
+# ============================================================================
+
+# Hintergrund und Grundtext
+# Vor- und Hintergrund 
+"ui.background" = { bg = "black", fg = "white" }
+# Normaler Text in Popups, Menüs
+"ui.text" = { fg = "white" }
+# Fokussierter Text in Picker
+"ui.text.focus" = { bg = "red", fg = "black", modifiers = ["bold"] } 
+
+# Cursor
+# Normal mode cursor
+"ui.cursor" = { bg = "white", fg = "black" }  
+# Primärer Cursor
+"ui.cursor.primary" = { bg = "white", fg = "black" }  
+# Insert mode cursor
+"ui.cursor.insert" = { bg = "light-gray", fg = "black" } 
+# Select mode cursor
+"ui.cursor.select" = { bg = "gray", fg = "white" }  
+# Matching bracket/paren - WICHTIG für Klammern!
+"ui.cursor.match" = { bg = "white", fg = "black", modifiers = ["bold"] } 
+# Cursorline (die Zeile wo der Cursor ist)
+"ui.cursorline.primary" = { bg = "red", fg = "red" }
+
+
+# Selection (markierter Text)
+"ui.selection" = { bg = "white", fg = "black" } # Farbe von Position unter Cursor
+"ui.selection.primary" = { bg = "white", fg = "black" } # markieren von text 
+
+# Gutter (Zeilennummern-Bereich)
+# "ui.gutter" = { fg = "gray", bg = "black" }
+# Zeilennummer der aktuellen Zeile
+# "ui.gutter.selected" = { fg = "white", modifiers = ["bold"] }  
+
+# Linenr (Zeilennummern selbst)
+"ui.linenr" = { fg = "gray", bg = "black" }
+"ui.linenr.selected" = { fg = "white", modifiers = ["bold"] }
+
+
+# ============================================================================
+# SYNTAX HIGHLIGHTING
+# ============================================================================
+
+# KEYWORDS - Schlüsselwörter der Sprache
+# Beispiele: if, else, for, while, return, import, export, function, const, let, var
+"keyword" = { fg = "white", modifiers = ["bold", "underlined"] } 
+# do, default, try, catch, await, throw
+"keyword.control" = { fg = "yellow", modifiers = ["bold", "underlined"] }
+# switch, case, if, else, while
+# "keyword.control.conditional" = { fg = "green", modifiers = ["bold", "underlined"] }
+# for
+# "keyword.control.repeat" = { fg = "blue", modifiers = ["bold", "underlined"] }
+# return, continue, break
+# "keyword.control.return" = { fg = "magenta", modifiers = ["bold", "underlined"] }  
+# import, export, use
+# "keyword.control.import" = { fg = "white", modifiers = ["bold", "underlined"] } 
+# and, or, in, instanceof
+# "keyword.operator" = { fg = "white", modifiers = ["bold"] }  
+# function, fn, def
+# "keyword.function" = { fg = "white", modifiers = ["bold", "underlined"] }
+# const, let, var, static 
+# "keyword.storage" = { fg = "white", modifiers = ["bold", "underlined"] }
+# class, struct, enum, interface
+# "keyword.storage.type" = { fg = "white", modifiers = ["bold", "underlined"] }
+# public, private, static, mut
+# "keyword.storage.modifier" = { fg = "white", modifiers = ["bold", "underlined"] } 
+
+
+"attribute" = { underline = { style = "line" } } # no effect
+
+"variable" = { fg = "gray", underline = { fg = "gray", style = "line" } }
+
+"constant.builtin" = { fg = "red", modifiers = ["bold"] }
+"type" = { fg = "black", bg = "gray", modifiers = ["bold"] }
+# "keyword" = { modifiers = ["bold"] }
+"function" = { modifiers = ["italic"] }
+
+
+[palette]
+# withe = "#ffffff"
+# gray = "#808080"
+# black = "#000000"
+black = "#000000"
+red = "#8e1101"
+green = "#1aaf03"
+yellow = "#ebd101"
+blue = "#006abd"
+magenta = "#85008e"
+cyan = "#01c6c3"
+gray = "#7c6f64"
+light-red = "#eb4130"
+light-green = "#88eb54"
+light-yellow = "#ebd867"
+light-blue = "#60a9e0"
+light-magenta = "#b75abd"
+light-cyan = "#9df4ef"
+light-gray = "#a89984"
+white = "#ffffff"

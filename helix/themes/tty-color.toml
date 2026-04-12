@@ -1,0 +1,189 @@
+# Custom Development Theme für Helix
+# Optimiert für klare Erkennbarkeit von Funktionen, Typen und Parametern
+# Verwendet nur 16 TTY-kompatible ANSI-Farben
+
+# Syntax Highlighting
+
+# Schlüsselwörter in Orange (light-red/red)
+"keyword" = { fg = "yellow", modifiers = ["bold"] }
+# "keyword" = { fg = "light-red", modifiers = ["bold"] }
+# "keyword.control" = { fg = "light-red", modifiers = ["bold"] }
+# "keyword.control.conditional" = { fg = "light-red", modifiers = ["bold"] }
+# "keyword.control.repeat" = { fg = "light-red", modifiers = ["bold"] }
+# "keyword.control.return" = { fg = "light-red", modifiers = ["bold"] }
+# "keyword.control.exception" = { fg = "light-red", modifiers = ["bold"] }
+# "keyword.control.import" = { fg = "light-red", modifiers = ["bold"] }
+# "keyword.operator" = { fg = "light-red" }
+# "keyword.directive" = { fg = "light-red", modifiers = ["italic"] }
+# "keyword.function" = { fg = "light-red", modifiers = ["bold"] }
+# "keyword.storage" = { fg = "light-red", modifiers = ["bold"] }
+# "keyword.storage.type" = { fg = "light-red", modifiers = ["bold"] }
+# "keyword.storage.modifier" = { fg = "light-red", modifiers = ["bold"] }
+
+# Typen in Cyan/Light-Blue - sehr gut erkennbar
+"type" = { fg = "cyan", modifiers = ["bold"] }
+# "type.builtin" = { fg = "light-cyan", modifiers = ["bold"] }
+# "type.parameter" = { fg = "light-cyan", modifiers = ["italic"] }
+# "type.enum" = { fg = "light-cyan", modifiers = ["bold"] }
+# "type.enum.variant" = { fg = "light-red" }
+
+# Funktionen in Gold/Yellow - sofort erkennbar
+"function" = { fg = "blue", modifiers = ["bold", "italic"] }
+# "function" = { fg = "yellow", modifiers = ["bold"] } # no effect
+# "function.builtin" = { fg = "yellow", modifiers = ["bold"] } # no effect
+# "function.method" = { fg = "yellow", modifiers = ["bold"] }
+# "function.macro" = { fg = "light-yellow", modifiers = ["bold", "italic"] }
+# "function.special" = { fg = "light-yellow", modifiers = ["bold"] }
+
+# Parameter in Magenta - deutlich erkennbar
+"variable" = { fg = "light-blue", underline = { style = "line" } }
+# "variable.parameter" = { fg = "light-blue", underline = { style = "line" } }
+# "variable.other.member" = { fg = "light-blue", underline = { style = "line"} }
+# "variable.builtin" = { fg = "light-yellow", modifiers = ["italic"] }
+
+# Konstanten
+"constant" = { fg = "light-magenta" }
+# "constant.builtin" = { fg = "light-green", modifiers = ["bold"] }
+"constant.builtin.boolean" = { fg = "light-red", modifiers = ["bold"] }
+"constant.character" = { fg = "white" }
+# "constant.character.escape" = { fg = "light-yellow", modifiers = ["bold"] }
+"constant.numeric" = { fg = "white" }
+
+# Strings
+"string" = { fg = "light-green" }
+# "string.regexp" = { fg = "light-yellow" }
+# "string.special" = { fg = "light-green", modifiers = ["italic"] }
+# "string.special.path" = { fg = "green", modifiers = ["underlined"] }
+# "string.special.url" = { fg = "light-blue", modifiers = ["underlined"] }
+# "string.special.symbol" = { fg = "light-magenta" }
+
+# Kommentare
+"comment" = { fg = "gray", modifiers = ["italic"] }
+"comment.line" = { fg = "gray", modifiers = ["italic"] }
+"comment.block" = { fg = "gray", modifiers = ["italic"] }
+"comment.block.documentation" = { fg = "light-gray", modifiers = ["italic"] }
+
+# Attribute & Decorators
+# "attribute" = { fg = "light-yellow", modifiers = ["italic"] }
+# "label" = { fg = "light-magenta", modifiers = ["italic"] }
+
+# Konstruktoren
+"constructor" = { fg = "cyan", modifiers = ["bold"] }
+
+# Namespace
+# "namespace" = { fg = "light-blue" }
+# "module" = { fg = "light-blue" }
+
+# Operatoren
+"operator" = { fg = "light-magenta" }
+
+# Punctuation
+# "punctuation" = { fg = "light-gray" }
+# "punctuation.bracket" = { fg = "white" }
+# "punctuation.delimiter" = { fg = "light-gray" }
+# "punctuation.special" = { fg = "light-yellow" }
+
+# Tags (HTML/XML)
+"tag" = { fg = "light-red", modifiers = ["bold"] }
+"tag.builtin" = { fg = "light-red", modifiers = ["bold"] }
+
+# Markup
+"markup.heading" = { fg = "light-yellow", modifiers = ["bold"] }
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link.url" = { fg = "light-blue", modifiers = ["underlined"] }
+"markup.link.text" = { fg = "light-cyan" }
+"markup.quote" = { fg = "light-gray", modifiers = ["italic"] }
+"markup.raw" = { fg = "green" }
+"markup.list" = { fg = "light-red" }
+
+# Diff
+"diff.plus" = { fg = "light-green" }
+"diff.minus" = { fg = "light-red" }
+"diff.delta" = { fg = "light-yellow" }
+
+# UI Elements
+"ui.background" = { bg = "black" }
+"ui.cursor" = { fg = "black", bg = "white" }
+"ui.cursor.primary" = { fg = "black", bg = "white" }
+"ui.cursor.match" = { bg = "white", fg = "black", modifiers = ["bold"] }
+"ui.cursor.insert" = { fg = "black", bg = "light-green" }
+"ui.cursor.select" = { fg = "black", bg = "light-magenta" }
+
+"ui.linenr" = { fg = "gray" }
+"ui.linenr.selected" = { fg = "white", modifiers = ["bold"] }
+
+"ui.statusline" = { fg = "white", bg = "blue" }
+"ui.statusline.inactive" = { fg = "gray", bg = "black" }
+"ui.statusline.normal" = { fg = "black", bg = "light-blue", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "black", bg = "light-green", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "black", bg = "light-magenta", modifiers = ["bold"] }
+
+"ui.bufferline" = { fg = "light-gray", bg = "black" }
+"ui.bufferline.active" = { fg = "light-yellow", bg = "blue", modifiers = ["bold"] }
+"ui.bufferline.background" = { bg = "black" }
+
+"ui.popup" = { fg = "white", bg = "blue" }
+"ui.popup.info" = { fg = "yellow", bg = "blue" }
+"ui.window" = { fg = "gray" }
+"ui.help" = { fg = "white", bg = "blue" }
+
+"ui.text" = { fg = "white" }
+"ui.text.focus" = { fg = "black", bg = "light-yellow", modifiers = ["bold"] }
+"ui.text.inactive" = { fg = "gray" }
+"ui.text.info" = { fg = "white" }
+
+"ui.virtual.whitespace" = { fg = "gray" }
+"ui.virtual.ruler" = { bg = "blue" }
+"ui.virtual.indent-guide" = { fg = "gray" }
+"ui.virtual.inlay-hint" = { fg = "gray", modifiers = ["italic"] }
+"ui.virtual.inlay-hint.parameter" = { fg = "magenta", modifiers = ["italic"] }
+"ui.virtual.inlay-hint.type" = { fg = "cyan", modifiers = ["italic"] }
+
+"ui.menu" = { fg = "white", bg = "blue" }
+"ui.menu.selected" = { fg = "black", bg = "light-yellow", modifiers = ["bold"] }
+"ui.menu.scroll" = { fg = "light-gray", bg = "gray" }
+
+"ui.selection" = { bg = "blue" }
+"ui.selection.primary" = { fg = "black", bg = "white" }
+
+# "ui.cursorline.primary" = { bg = "light-gray" }
+"ui.highlight" = { bg = "blue" }
+
+# Diagnostics
+"warning" = { fg = "light-yellow", modifiers = ["bold"] }
+"error" = { fg = "red", modifiers = ["bold"] }
+"info" = { fg = "light-cyan" }
+"hint" = { fg = "light-gray" }
+
+"diagnostic.warning" = { underline = { color = "light-yellow", style = "curl" } }
+"diagnostic.error" = { underline = { color = "light-red", style = "curl" } }
+"diagnostic.info" = { underline = { color = "light-cyan", style = "curl" } }
+"diagnostic.hint" = { underline = { color = "light-gray", style = "curl" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+"diagnostic.deprecated" = { modifiers = ["crossed_out"] }
+
+# Debug
+"ui.debug.breakpoint" = { fg = "light-red", bg = "black" }
+"ui.debug.active" = { fg = "light-yellow", bg = "black" }
+
+# Palette mit 16 ANSI-Farben
+[palette]
+black = "#000000"
+red = "#8e1101"
+green = "#1aaf03"
+yellow = "#ebd101"
+blue = "#006abd"
+magenta = "#85008e"
+cyan = "#00adab"
+gray = "#7c6f64"
+light-red = "#eb4130"
+light-green = "#88eb54"
+light-yellow = "#ebd867"
+light-blue = "#60a9e0"
+light-magenta = "#b75abd"
+light-cyan = "#a6fffa"
+light-gray = "#a89984"
+white = "#ffffff"
+

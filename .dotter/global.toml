@@ -1,0 +1,91 @@
+[helpers]
+
+# === Terminal ===
+[alacritty]
+depends = []
+
+[alacritty.files]
+"alacritty" = "~/.config/alacritty"
+
+# === Shell-Prompt ===
+[starship]
+depends = []
+
+[starship.files]
+"starship.toml" = "~/.config/starship.toml"
+
+# === Shells ===
+[nushell]
+depends = []
+
+[nushell.files]
+"nushell" = "~/.config/nushell"
+
+[ion]
+depends = []
+
+[ion.files]
+"ion" = "~/.config/ion"
+
+# === Editor ===
+[helix]
+depends = []
+
+[helix.files]
+"helix" = "~/.config/helix"
+
+# === Versionskontrolle ===
+[jj]
+depends = []
+
+[jj.files]
+"jj" = "~/.config/jj"
+
+# === Launcher ===
+[fuzzel]
+depends = []
+
+[fuzzel.files]
+"fuzzel" = "~/.config/fuzzel"
+
+# === Window Manager / Compositor ===
+[niri]
+depends = []
+
+[niri.files]
+"niri" = "~/.config/niri"
+
+# === Status-Bar ===
+[waybar]
+depends = ["niri"]
+
+[waybar.files]
+"waybar" = "~/.config/waybar"
+
+# === Terminal-Multiplexer ===
+[zellij]
+depends = []
+
+[zellij.files]
+"zellij" = "~/.config/zellij"
+
+# === File-Manager ===
+[yazi]
+depends = []
+
+[yazi.files]
+"yazi" = { target = "~/.config/yazi", type = "symbolic" }
+
+# === Email ===
+[himalaya]
+depends = []
+
+[himalaya.files]
+"himalaya" = "~/.config/himalaya"
+
+# === Wallpaper ===
+[wallpaper]
+depends = []
+
+[wallpaper.files]
+"wallpaper" = "~/wallpaper"

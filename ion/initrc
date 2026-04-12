@@ -1,0 +1,16 @@
+# Aliase
+# alias ls = "eza"
+# alias ll = "eza -1l"
+# alias la = "eza -1la"
+# alias '..' = "cd .."
+# alias '/' = "cd /"
+# alias \~ = "cd ~"
+
+export GPG_TTY = $(tty)
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+
+# TTY GPG-Agenten zuweisen
+let _ = $(gpg-connect-agent updatestartuptty /bye)
+
+# Starship prompt
+eval $(starship init ion)

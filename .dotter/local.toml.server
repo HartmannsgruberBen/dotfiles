@@ -1,0 +1,9 @@
+packages = [
+    "starship",
+    "nushell",
+    "ion",
+    "helix",
+    "jj",
+    "zellij",
+    "yazi"
+]

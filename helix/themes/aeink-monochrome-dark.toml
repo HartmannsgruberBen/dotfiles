@@ -1,0 +1,250 @@
+# E-Ink Monochrome Dark Theme for Helix
+# Optimized for black & white e-ink displays and TTY
+# Only uses black, white, and gray with modifiers
+# Author: Benjamin Hartmannsgruber
+
+# Syntax Highlighting
+# ============================================================================
+
+# Attributes & Members (struct fields, object properties)
+# "attribute" = { fg = "white", modifiers = ["bold", "italic"] }
+
+# Types - always underlined with gray background
+"type" = { fg = "black", bg = "light-gray", modifiers = ["bold"] }
+# "type.builtin" = { fg = "black", bg = "light-gray", modifiers = ["bold"] }
+# "type.parameter" = { fg = "black", bg = "light-gray", modifiers = ["bold"] }
+# "type.enum" = { fg = "white", bg = "gray", underline = { style = "line" } }
+# "type.enum.variant" = { fg = "white", modifiers = ["bold"] }
+
+# Constructors
+"constructor" = { fg = "white", modifiers = ["bold"] }
+
+# Constants
+"constant" = { fg = "white", modifiers = ["bold", "italic"] }
+# "constant.builtin" = { fg = "white", modifiers = ["bold"] }
+# "constant.builtin.boolean" = { fg = "white", modifiers = ["bold"] }
+"constant.character" = { fg = "white" }
+# "constant.character.escape" = { fg = "white", modifiers = ["bold"] }
+"constant.numeric" = { fg = "white" }
+# "constant.numeric.integer" = { fg = "white" }
+# "constant.numeric.float" = { fg = "white" }
+
+# Strings
+"string" = { fg = "white", modifiers = ["italic"] }
+# "string.regexp" = { fg = "white", modifiers = ["italic"] }
+# "string.special" = { fg = "white", modifiers = ["bold", "italic"] }
+# "string.special.path" = { fg = "white", modifiers = ["italic"] }
+# "string.special.url" = { fg = "white", underline = { style = "line" }, modifiers = ["italic"] }
+# "string.special.symbol" = { fg = "white", modifiers = ["bold"] }
+
+# Comments
+"comment" = { fg = "gray", modifiers = ["italic"] }
+"comment.line" = { fg = "gray", modifiers = ["italic"] }
+"comment.block" = { fg = "gray", modifiers = ["italic"] }
+"comment.block.documentation" = { fg = "gray", modifiers = ["italic", "bold"] }
+
+# Variables
+"variable" = { fg = "light-gray", underline = { style = "line" } }
+# "variable.builtin" = { fg = "white", modifiers = ["bold"] }
+# "variable.parameter" = { fg = "light-gray", underline = { style = "line" } }
+# "variable.other.member" = { fg = "white", modifiers = ["bold", "italic"] }
+# "variable.other.member.private" = { fg = "white", modifiers = ["bold", "italic"] }
+# 
+
+# Labels
+# "label" = { fg = "white", modifiers = ["bold"] }
+
+# Punctuation
+# "punctuation" = { fg = "white" }
+# "punctuation.delimiter" = { fg = "white" }
+# "punctuation.bracket" = { fg = "white", modifiers = ["bold"] }
+# "punctuation.special" = { fg = "white", modifiers = ["bold"] }
+
+# Keywords
+"keyword" = { fg = "white", modifiers = ["bold"] }
+# "keyword.control" = { fg = "white", modifiers = ["bold"] }
+# "keyword.control.conditional" = { fg = "white", modifiers = ["bold"] }
+# "keyword.control.repeat" = { fg = "white", modifiers = ["bold"] }
+# "keyword.control.import" = { fg = "white", modifiers = ["bold"] }
+# "keyword.control.return" = { fg = "white", modifiers = ["bold"] }
+# "keyword.control.exception" = { fg = "white", modifiers = ["bold"] }
+# "keyword.operator" = { fg = "white", modifiers = ["bold"] }
+# "keyword.directive" = { fg = "white", modifiers = ["bold"] }
+# "keyword.function" = { fg = "white", modifiers = ["bold"] }
+# "keyword.storage" = { fg = "white", modifiers = ["bold"] }
+# "keyword.storage.type" = { fg = "white", modifiers = ["bold"] }
+# "keyword.storage.modifier" = { fg = "white", modifiers = ["bold"] }
+
+# Operators
+# "operator" = { fg = "white", modifiers = ["bold"] }
+
+# Functions
+"function" = { fg = "white", underline = { style = "line" }, modifiers = ["italic"] }
+# "function.builtin" = { fg = "white", underline = { style = "line" }, modifiers = ["bold"] }
+# "function.method" = { fg = "white", underline = { style = "line" } }
+# "function.method.private" = { fg = "white", underline = { style = "line" }, modifiers = ["italic"] }
+# "function.macro" = { fg = "white", modifiers = ["bold"] }
+# "function.special" = { fg = "white", underline = { style = "line" }, modifiers = ["bold"] }
+
+# Tags (HTML/XML)
+"tag" = { fg = "white", modifiers = ["bold"] }
+"tag.builtin" = { fg = "white", modifiers = ["bold"] }
+
+# Namespaces
+"namespace" = { fg = "white", modifiers = ["bold"] }
+
+# Special
+"special" = { fg = "white", modifiers = ["bold"] }
+
+# Operatoren
+"operator" = { bg = "gray", fg = "white" }
+
+# Markup (Markdown, etc.)
+"markup.heading" = { fg = "white", modifiers = ["bold"] }
+"markup.heading.marker" = { fg = "white", modifiers = ["bold"] }
+"markup.heading.1" = { fg = "white", modifiers = ["bold"] }
+"markup.heading.2" = { fg = "white", modifiers = ["bold"] }
+"markup.heading.3" = { fg = "white", modifiers = ["bold"] }
+"markup.heading.4" = { fg = "white", modifiers = ["bold"] }
+"markup.heading.5" = { fg = "white", modifiers = ["bold"] }
+"markup.heading.6" = { fg = "white", modifiers = ["bold"] }
+"markup.list" = { fg = "white" }
+"markup.list.unnumbered" = { fg = "white" }
+"markup.list.numbered" = { fg = "white" }
+"markup.list.checked" = { fg = "white", modifiers = ["bold"] }
+"markup.list.unchecked" = { fg = "white" }
+"markup.bold" = { fg = "white", modifiers = ["bold"] }
+"markup.italic" = { fg = "white", modifiers = ["italic"] }
+"markup.strikethrough" = { fg = "white", modifiers = ["crossed_out"] }
+"markup.link.url" = { fg = "white", underline = { style = "line" } }
+"markup.link.label" = { fg = "white", modifiers = ["italic"] }
+"markup.link.text" = { fg = "white" }
+"markup.quote" = { fg = "white", modifiers = ["italic"] }
+"markup.raw" = { fg = "white" }
+"markup.raw.inline" = { fg = "white" }
+"markup.raw.block" = { fg = "white" }
+
+# Diff
+"diff.plus" = { fg = "white", modifiers = ["bold"] }
+"diff.plus.gutter" = { fg = "white", modifiers = ["bold"] }
+"diff.minus" = { fg = "gray", modifiers = ["crossed_out"] }
+"diff.minus.gutter" = { fg = "gray" }
+"diff.delta" = { fg = "white", underline = { style = "line" } }
+"diff.delta.moved" = { fg = "white", underline = { style = "line" }, modifiers = ["italic"] }
+"diff.conflict" = { fg = "white", bg = "gray", modifiers = ["bold"] }
+"diff.conflict.gutter" = { fg = "white", modifiers = ["bold"] }
+
+# UI Elements
+# ============================================================================
+
+# Background & Foreground
+"ui.background" = { bg = "black", fg = "white" }
+"ui.background.separator" = { fg = "white" }
+
+# Cursor
+"ui.cursor" = { bg = "white", fg = "black" }
+"ui.cursor.normal" = { bg = "white", fg = "black" }
+"ui.cursor.insert" = { bg = "white", fg = "black", modifiers = ["bold"] }
+"ui.cursor.select" = { bg = "white", fg = "black" }
+"ui.cursor.match" = { bg = "white", fg = "black", modifiers = ["bold"] }
+"ui.cursor.primary" = { bg = "white", fg = "black", modifiers = ["bold"] }
+"ui.cursor.primary.normal" = { bg = "white", fg = "black", modifiers = ["bold"] }
+"ui.cursor.primary.insert" = { bg = "white", fg = "black", modifiers = ["bold"] }
+"ui.cursor.primary.select" = { bg = "white", fg = "black", modifiers = ["bold"] }
+
+# Cursorline & Cursorcolumn
+"ui.cursorline.primary" = { bg = "light-gray" }
+"ui.cursorline.secondary" = { bg = "light-gray" }
+"ui.cursorcolumn.primary" = { bg = "gray" }
+"ui.cursorcolumn.secondary" = { bg = "gray" }
+
+# Debug
+"ui.debug.breakpoint" = { fg = "white", bg = "black", modifiers = ["bold"] }
+"ui.debug.active" = { fg = "white", bg = "gray", modifiers = ["bold"] }
+
+# Gutter (Zeilennummern-Bereich) - schwarzer Hintergrund, graue Schrift
+"ui.gutter" = { fg = "gray", bg = "black" }
+"ui.gutter.selected" = { fg = "white", bg = "black", modifiers = ["bold"] }
+
+# Line numbers - graue Schrift, aktuelle Zeile weiß und fett
+"ui.linenr" = { fg = "gray", bg = "black" }
+"ui.linenr.selected" = { fg = "white", bg = "black", modifiers = ["bold"] }
+
+# Statusline
+"ui.statusline" = { fg = "black", bg = "white" }
+"ui.statusline.inactive" = { fg = "gray", bg = "black" }
+"ui.statusline.normal" = { fg = "black", bg = "white", modifiers = ["bold"] }
+"ui.statusline.insert" = { fg = "white", bg = "black", modifiers = ["bold"] }
+"ui.statusline.select" = { fg = "black", bg = "white", modifiers = ["bold"] }
+"ui.statusline.separator" = { fg = "gray" }
+
+# Bufferline
+"ui.bufferline" = { fg = "gray", bg = "black" }
+"ui.bufferline.active" = { fg = "white", bg = "black", modifiers = ["bold"] }
+"ui.bufferline.background" = { bg = "black" }
+
+# Popups & Windows
+"ui.popup" = { fg = "white", bg = "black" }
+"ui.popup.info" = { fg = "white", bg = "gray" }
+"ui.window" = { fg = "white" }
+"ui.help" = { fg = "white", bg = "gray" }
+
+# Text
+"ui.text" = { fg = "white" }
+"ui.text.focus" = { fg = "white", bg = "gray", modifiers = ["bold"] }
+"ui.text.inactive" = { fg = "gray" }
+"ui.text.info" = { fg = "white", modifiers = ["bold"] }
+"ui.text.directory" = { fg = "white", modifiers = ["bold"] }
+
+# Virtual text
+"ui.virtual" = { fg = "gray" }
+"ui.virtual.ruler" = { bg = "gray" }
+"ui.virtual.whitespace" = { fg = "gray" }
+"ui.virtual.indent-guide" = { fg = "gray" }
+"ui.virtual.inlay-hint" = { fg = "gray", modifiers = ["italic"] }
+"ui.virtual.inlay-hint.parameter" = { fg = "gray", underline = { style = "line" } }
+"ui.virtual.inlay-hint.type" = { fg = "gray", modifiers = ["italic"] }
+"ui.virtual.wrap" = { fg = "gray" }
+"ui.virtual.jump-label" = { fg = "white", bg = "gray", modifiers = ["bold"] }
+
+# Menu & Picker
+"ui.menu" = { fg = "white", bg = "black" }
+"ui.menu.selected" = { fg = "black", bg = "white", modifiers = ["bold"] }
+"ui.menu.scroll" = { fg = "gray", bg = "black" }
+
+"ui.picker.header" = { fg = "white", modifiers = ["bold"] }
+"ui.picker.header.column" = { fg = "white", modifiers = ["bold"] }
+"ui.picker.header.column.active" = { fg = "white", underline = { style = "line" }, modifiers = ["bold"] }
+
+# Selection
+"ui.selection" = { bg = "gray" }
+"ui.selection.primary" = { bg = "white", fg = "black", modifiers = ["bold"] }
+
+# Highlight
+"ui.highlight" = { bg = "gray" }
+"ui.highlight.frameline" = { bg = "gray", modifiers = ["bold"] }
+
+# Diagnostics
+"warning" = { fg = "white", bg = "black", modifiers = ["bold"] }
+"error" = { fg = "white", bg = "black", modifiers = ["bold"] }
+"info" = { fg = "white", bg = "black" }
+"hint" = { fg = "gray", bg = "black", modifiers = ["italic"] }
+
+"diagnostic" = { underline = { style = "line" } }
+"diagnostic.hint" = { fg = "gray", underline = { style = "dotted" } }
+"diagnostic.info" = { fg = "white", underline = { style = "line" } }
+"diagnostic.warning" = { fg = "white", underline = { style = "line" }, modifiers = ["bold"] }
+"diagnostic.error" = { fg = "white", underline = { style = "line" }, modifiers = ["bold"] }
+"diagnostic.unnecessary" = { fg = "gray", modifiers = ["crossed_out"] }
+"diagnostic.deprecated" = { fg = "gray", modifiers = ["crossed_out"] }
+
+# Tabstop (Snippets)
+"tabstop" = { bg = "gray", underline = { style = "line" } }
+
+# Palette
+# ============================================================================
+[palette]
+black = "#000000"
+white = "#ffffff"
+gray = "#404040"
+light-gray = "#808080"

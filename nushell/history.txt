@@ -1,0 +1,17 @@
+eza -1la
+cd nushell/
+eza
+hx config.nu
+source config.nu
+clear
+eza
+which $SHELL
+quit
+exit
+hx env.nu
+hx history.txt
+exit
+tutanota-desktop
+exit
+gpg --edit-key 1BDB29E1E7D33EC630FBB2CFFFE9AFECADBBD17F
+bash
