@@ -88,4 +88,4 @@ depends = []
 depends = []
 
 [wallpaper.files]
-"wallpaper" = "~/wallpaper"
+"wallpaper" = { target = "~/wallpaper", type = "symbolic" }
