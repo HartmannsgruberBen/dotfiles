@@ -6,11 +6,7 @@
 # alias '/' = "cd /"
 # alias \~ = "cd ~"
 
-export GPG_TTY = $(tty)
-export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
-
-# TTY GPG-Agenten zuweisen
-let _ = $(gpg-connect-agent updatestartuptty /bye)
+export EDITOR=hx
 
 # Starship prompt
 eval $(starship init ion)
